@@ -1,0 +1,61 @@
+/* Gallery Styles */
+.gallery-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+/* Expanded Image Styles */
+.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001; /* Above overlay */
+  max-width: 80vw;
+  height: auto;
+  max-height: 80vh;
+}
+
+.expanded .gallery-image {
+  width: 100%;
+  height: auto;
+}
+
+.expanded:hover .gallery-image {
+  transform: none;
+}
+
+/* Overlay to dim the background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Dimming effect */
+  z-index: 1000; /* Behind expanded image */
+}

@@ -1,0 +1,180 @@
+/* Color Variables */
+:root {
+  --main-font-color: #ffffff; /* White */
+  --accent-color: #d3b0ff; /* Lavender */
+  --background-color: #ddd; /* Pale Orange */
+  --dark-aqua: #006d75; /* Aqua Lake */
+  --dark-violet: #4422aa;
+  --cherry-red: #d20a2e;
+  --footer-bg-color: var(--dark-aqua); /* Footer and Navbar Background */
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--main-font-color);
+}
+
+/* Container for pages */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  transform: rotate(335deg);
+  background: linear-gradient(180deg, var(--cherry-red), #d20a2e77);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  mask-image: url("./assets/images/textures/brush-mask-06-a.png"); /* Use PNG for transparency */
+  -webkit-mask-image: url("./assets/images/textures/brush-mask-06-a.png"); /* Add WebKit support */
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  align-items: center;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: var(--main-font-color);
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", "Sawarabi Mincho", sans-serif;
+}
+
+body,
+p,
+a,
+li {
+  font-family: "Klee One", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-color);
+  color: var(--main-font-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #7b5cb2; /* Darker lavender */
+}
+
+/* Layout adjustments */
+main {
+  min-height: 80vh;
+  padding: 40px 0;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2em 2em 6em 2em;
+  max-width: 40%;
+  transform: rotate(7deg);
+  z-index: 1000;
+  background: linear-gradient(180deg, var(--footer-bg-color), #006d7500);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  mask-image: url("./assets/images/textures/brush-mask-02-a.png"); /* Use PNG for transparency */
+  -webkit-mask-image: url("./assets/images/textures/brush-mask-02-a.png"); /* Add WebKit support */
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  align-items: center;
+  justify-content: right;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+}
+
+.nav-bar li {
+  margin: 0 2em;
+}
+
+.nav-bar a {
+  color: var(--main-font-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: -3em;
+  right: -3em;
+  padding: 2em;
+  transform: rotate(-15deg);
+  max-width: 40%;
+  background: linear-gradient(135deg, var(--dark-violet), #42a7);
+  padding-bottom: 7em;
+  mask-image: url("./assets/images/textures/brush-mask-02-a.png"); /* Use PNG for transparency */
+  -webkit-mask-image: url("./assets/images/textures/brush-mask-02-a.png"); /* Add WebKit support */
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  align-items: center;
+  justify-content: right;
+}
+footer p {
+  font-size: 0.75em;
+}

@@ -1,0 +1,49 @@
+/* Hero Section */
+.home-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  position: relative; /* Ensure it's relative to the content below */
+  overflow: hidden;
+  background: radial-gradient(#000a, #000f),
+    url("../../assets/images/staff02.png");
+  background-size: cover;
+}
+
+/* Center the H1 without absolute positioning */
+.hero-section h1 {
+  position: absolute;
+  left: 50vw;
+  top: 35vh;
+  transform: translate(-50%, -100%);
+  font-size: 6em;
+  white-space: nowrap;
+}
+
+/* About Section */
+.about-section {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5em 5em 2.5em 2.5em;
+  background: linear-gradient(to right, var(--cherry-red) 30%, #e440 80%);
+  mask-image: url("../../assets/images/textures/brush-mask-01.png"); /* Use PNG for transparency */
+  -webkit-mask-image: url("../../assets/images/textures/brush-mask-01.png"); /* Add WebKit support */
+  mask-size: 120% 120%;
+  -webkit-mask-size: 110% 110%;
+  mask-position: 20% 20%;
+  -webkit-mask-position: 80% -30%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  align-items: center;
+  justify-content: right;
+}
+
+.about-section h2 {
+  font-size: 1.5em;
+}
+
+.about-section p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
