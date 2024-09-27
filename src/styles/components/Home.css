@@ -21,14 +21,14 @@
 }
 
 /* About Section */
-.about-section {
+/*.about-section {
   position: absolute;
   left: 0;
   bottom: 0;
   padding: 5em 5em 2.5em 2.5em;
   background: linear-gradient(to right, var(--cherry-red) 30%, #e440 80%);
-  mask-image: url("../../assets/images/textures/brush-mask-01.png"); /* Use PNG for transparency */
-  -webkit-mask-image: url("../../assets/images/textures/brush-mask-01.png"); /* Add WebKit support */
+  mask-image: url("../../assets/images/textures/brush-mask-01.png"); 
+  -webkit-mask-image: url("../../assets/images/textures/brush-mask-01.png");
   mask-size: 120% 120%;
   -webkit-mask-size: 110% 110%;
   mask-position: 20% 20%;
@@ -37,6 +37,14 @@
   -webkit-mask-repeat: no-repeat;
   align-items: center;
   justify-content: right;
+}*/
+
+.about-section {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5em 5em 2.5em 2.5em;
+  background: url(../../assets/images/textures/4750747.jpg);
 }
 
 .about-section h2 {
